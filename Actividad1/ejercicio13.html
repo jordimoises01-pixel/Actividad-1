@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 13: Verificador de Edad para Votar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      padding: 40px 20px;
+    }
+    .contenedor {
+      max-width: 380px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin-top: 0;
+      color: #333;
+      text-align: center;
+    }
+    .campo-grupo {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #555;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    input[readonly] {
+      background-color: #e9ecef;
+      color: #495057;
+      cursor: not-allowed;
+      font-weight: bold;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #6f42c1;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #593196;
+    }
+    .error {
+      color: #dc3545;
+      font-size: 13px;
+      margin-top: 5px;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<div class="contenedor">
+  <h2>Verificador de Votación</h2>
+
+  <div class="campo-grupo">
+    <label for="edad">Ingresa tu edad:</label>
+    <input type="text" id="edad" placeholder="Ej. 20">
+    <span id="mensajeError" class="error"></span>
+  </div>
+
+  <button type="button" id="btnVerificar">Verificar</button>
+
+  <div class="campo-grupo" style="margin-top: 15px;">
+    <label for="resultado">Resultado:</label>
+    <input type="text" id="resultado" readonly placeholder="Esperando edad...">
+  </div>
+</div>
+
+<script src="/js/ejercicio13.js"></script></body>
+</html>

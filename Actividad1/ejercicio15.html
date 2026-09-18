@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 15: Objetos y Calificaciones</title>
+  <style>
+    body { 
+      font-family: sans-serif; 
+      background: #f4f4f9; 
+      display: grid; 
+      place-items: center; 
+      min-height: 90vh; 
+      margin: 0; 
+    }
+    .card { 
+      background: #fff; 
+      padding: 20px; 
+      border-radius: 8px; 
+      width: 320px; 
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+     }
+    label { 
+      font-weight: bold; 
+      font-size: 14px; 
+      margin-top: 12px; 
+      display: block; 
+      color: #333; 
+    }
+    input, button { 
+      width: 100%; 
+      padding: 8px; 
+      margin-top: 4px; 
+      box-sizing: border-box; 
+      border-radius: 4px; 
+      border: 1px solid #ccc; 
+    }
+    input[readonly] { 
+      background: #e9ecef; 
+      cursor: not-allowed; 
+      font-weight: bold; 
+    }
+    .btn-group { 
+      display: flex; 
+      gap: 8px; 
+      margin-top: 15px; 
+    }
+    .btn-group button { 
+      margin-top: 0; 
+      flex: 1; 
+      font-weight: bold; 
+      cursor: pointer; 
+      color: white; 
+      border: none; 
+    }
+    .btn-agregar { 
+      background: #28a745; 
+    }
+    .btn-calcular { 
+      background: #007bff; 
+    }
+    .error { 
+      color: #dc3545; 
+      font-size: 12px; 
+      display: block; 
+      margin-top: 4px; 
+    }
+    .info { 
+      color: #17a2b8; 
+      font-size: 12px; 
+      display: block; 
+      margin-top: 4px; 
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2 style="text-align:center; margin-top:0;">Control de Estudiantes</h2>
+    
+    <label for="nombre">Nombre del estudiante:</label>
+    <input type="text" id="nombre" placeholder="Ej. Juan">
+
+    <label for="calificacion">Calificación:</label>
+    <input type="number" id="calificacion" placeholder="Ej. 85" min="0" max="100">
+    <span id="mensajeEstado"></span>
+
+    <div class="btn-group">
+      <button id="btnAgregar" class="btn-agregar">Agregar</button>
+      <button id="btnCalcular" class="btn-calcular">Calcular</button>
+    </div>
+
+    <label for="promedio">Calificación promedio:</label>
+    <input type="text" id="promedio" readonly placeholder="...">
+
+    <label for="masAlta">Calificación más alta:</label>
+    <input type="text" id="masAlta" readonly placeholder="...">
+
+    <label for="masBaja">Calificación más baja:</label>
+    <input type="text" id="masBaja" readonly placeholder="...">
+  </div>
+  <script src="/js/ejercicio15.js"></script>
+</body>
+</html>

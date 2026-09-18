@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 11: KM a Millas</title>
+  <style>
+    body { 
+      font-family: sans-serif; 
+      background: #f4f4f9; 
+      display: grid; 
+      place-items: center; 
+      min-height: 90vh; 
+      margin: 0; 
+    }
+    .card { 
+      background: #fff; 
+      padding: 20px; 
+      border-radius: 8px; 
+      width: 300px; 
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+    }
+    label { 
+      font-weight: bold; 
+      font-size: 14px; 
+      margin-top: 12px; 
+      display: block; 
+      color: #333; }
+    input, button { 
+      width: 100%; 
+      padding: 8px; 
+      margin-top: 4px; 
+      box-sizing: border-box; 
+      border-radius: 4px; 
+      border: 1px solid #ccc; 
+    }
+    input[readonly] { 
+      background: #e9ecef; 
+      cursor: not-allowed; }
+    button { 
+      background: #007bff; 
+      color: white; 
+      border: none; 
+      font-weight: bold; 
+      cursor: pointer; 
+      margin-top: 15px; }
+    .error { 
+      color: #dc3545; 
+      font-size: 12px; 
+      display: block; 
+      margin-top: 4px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2 style="text-align:center; margin-top:0;">KM a Millas</h2>
+    <label for="kilometros">Distancia en Kilómetros:</label>
+    <input type="text" id="kilometros" placeholder="Ej. 10">
+    <span id="mensajeError" class="error"></span>
+
+    <button id="btnConvertir">Convertir</button>
+
+    <label for="millas">Resultado en Millas:</label>
+    <input type="text" id="millas" readonly placeholder="0.000000">
+  </div>
+  <script src="/js/ejercicio11.js"></script>
+</body>
+</html>

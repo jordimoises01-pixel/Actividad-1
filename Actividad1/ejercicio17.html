@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 17: Gestión de Tareas</title>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <style>
+    body { 
+      font-family: sans-serif; 
+      background: #f4f4f9; 
+      display: grid; 
+      place-items: center; 
+      min-height: 90vh; 
+      margin: 0; 
+    }
+    .card { 
+      background: #fff; 
+      padding: 20px; 
+      border-radius: 8px; 
+      width: 350px; 
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+    }
+    h2 { 
+      text-align: center; 
+      margin-top: 0; 
+      color: #333; 
+    }
+    .input-grupo { 
+      display: flex; 
+      gap: 8px; 
+      margin-top: 15px; 
+      margin-bottom: 15px; 
+    }
+    input[type="text"] { 
+      flex: 1; 
+      padding: 8px; 
+      border-radius: 4px; 
+      border: 1px solid #ccc; 
+      box-sizing: border-box; 
+    }
+    .btn-agregar { 
+      background: #28a745; 
+      color: white; 
+      border: none; 
+      padding: 8px 12px; 
+      border-radius: 4px; 
+      font-weight: bold; 
+      cursor: pointer; 
+    }
+    .btn-agregar:hover { 
+      background: #218838; 
+    }
+    ul { 
+      list-style: none; 
+      padding: 0; 
+      margin: 0; 
+    }
+    .item-tarea { 
+      display: flex; 
+      justify-content: space-between; 
+      align-items: center; 
+      padding: 8px 10px; 
+      background: #f8f9fa; 
+      border: 1px solid #e9ecef; 
+      border-radius: 4px; 
+      margin-bottom: 6px; 
+    }
+    .btn-eliminar { 
+      background: #dc3545; 
+      color: white; 
+      border: none; 
+      padding: 4px 8px; 
+      border-radius: 4px; 
+      cursor: pointer; 
+      font-size: 12px; 
+    }
+    .btn-eliminar:hover { 
+      background: #c82333; 
+    }
+    .sin-tareas { 
+      text-align: center; 
+      color: #6c757d; 
+      font-style: italic; 
+      font-size: 14px; padding: 10px 0; 
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Lista de Tareas</h2>
+
+    <div class="input-grupo">
+      <input type="text" id="nuevaTarea" placeholder="Escribe una tarea">
+      <button type="button" id="btnAgregar" class="btn-agregar">Agregar</button>
+    </div>
+
+    <ul id="listaTareas"></ul>
+  </div>
+  <script src="ejercicio17.js"></script>
+</body>
+</html>
