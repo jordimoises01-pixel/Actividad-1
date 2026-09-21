@@ -1,22 +1,34 @@
 # Prácticas de Programación Web - ITO
 
-Repositorio con los ejercicios prácticos de la materia de Programación Web, enfocados en fundamentos de HTML5 y estilizado con CSS3.
+Repositorio con los ejercicios prácticos de la materia de Programación Web, enfocados en fundamentos de HTML5, estilizado con CSS3 y desarrollo dinámico con JavaScript ES6+.
 
 ## Contenido
 
-* **Ejercicio 1:** Hola Mundo - Estructura básica de HTML5.
-* **Ejercicio 2:** Párrafos y Formato - Formato de texto con `<p>`, `<strong>` y `<em>`.
-* **Ejercicio 3:** Enlaces Simples - Uso de enlaces `<a>` y atributo `target`.
-* **Ejercicio 4:** Imágenes Básicas - Insertar imágenes con `<img>` y atributos `alt`.
-* **Ejercicio 5:** Combinando Texto y Enlaces - Integración de contenido y navegación.
-* **Ejercicio 6:** Secciones Semánticas - Estructura web con etiquetas HTML5.
-* **Ejercicio 7:** Listas Anidadas - Creación de una receta usando `<ul>` y `<ol>`.
-* **Ejercicio 8:** Horario de Clases - Tabla interactiva estilizada con CSS (`rowspan` y `colspan`).
-* **Ejercicio 9:** Formulario de Contacto - Formulario completo estilizado con Flexbox, Grid y variables CSS.
+* **Ejercicio 1:** ¡Hola Mundo!.
+* **Ejercicio 2:** Párrafos y Formato Básico.
+* **Ejercicio 3:** Enlaces Simples.
+* **Ejercicio 4:** Imágenes Básicas.
+* **Ejercicio 5:** Combinando Texto y Enlaces.
+* **Ejercicio 6:** Secciones Semánticas Básicas.
+* **Ejercicio 7:** Listas Anidadas + Enlaces.
+* **Ejercicio 8:** Horario de Clases.
+* **Ejercicio 9:** Formulario de Contacto.
+* **Ejercicio 10:** Celsius a Fahrenheit.
+* **Ejercicio 11:** Kilómetros a Millas.
+* **Ejercicio 12:** Pesos a Dólares.
+* **Ejercicio 13:** Verificar Votación.
+* **Ejercicio 14:** Arreglos y Métodos de Manipulación.
+* **Ejercicio 15:** Objetos y Calificaciones.
+* **Ejercicio 16:** Calculadora con Funciones Flecha.
+* **Ejercicio 17:** Gestión de Tareas con Local Storage.
+* **Ejercicio 18:** Manipulación del DOM con Bootstrap.
 
 ## Tecnologías Utilizadas
 
 * HTML5
 * CSS3
+* JavaScript (ES6+)
+* Bootstrap 5
+* SweetAlert2
 * XAMPP (Servidor local)
 * GitHub Pages (Publicación)
